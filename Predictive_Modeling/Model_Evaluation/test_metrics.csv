@@ -1,0 +1,5 @@
+model,threshold,accuracy,precision,recall,f1,roc_auc,pr_auc
+Majority class (always 'No'),0.5,0.735,0.0,0.0,0.0,0.5,0.265
+Logistic regression,0.6,0.753,0.528,0.65,0.583,0.807,0.605
+ANN (default threshold),0.5,0.784,0.615,0.495,0.548,0.807,0.598
+ANN (tuned threshold),0.24,0.696,0.456,0.757,0.569,0.807,0.598

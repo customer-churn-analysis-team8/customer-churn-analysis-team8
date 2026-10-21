@@ -1,0 +1,41 @@
+{
+  "model": "sklearn MLPClassifier (feed-forward ANN) inside a Pipeline with StandardScaler",
+  "features_in_order": [
+    "gender",
+    "SeniorCitizen",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "MonthlyCharges",
+    "Contract_Month-to-month",
+    "Contract_One year",
+    "Contract_Two year"
+  ],
+  "hidden_layer_sizes": [
+    32,
+    16
+  ],
+  "activation": "tanh",
+  "output_activation": "logistic (sigmoid)",
+  "alpha_l2": 0.1,
+  "optimizer": "adam",
+  "learning_rate_init": 0.001,
+  "batch_size": 64,
+  "best_epoch": 115,
+  "decision_threshold": 0.24,
+  "risk_tiers": {
+    "High": ">= 0.60",
+    "Medium": "0.24 to 0.60",
+    "Low": "< 0.24"
+  },
+  "test_metrics": {
+    "accuracy": 0.696,
+    "precision": 0.456,
+    "recall": 0.757,
+    "f1": 0.569,
+    "roc_auc": 0.807,
+    "pr_auc": 0.598
+  }
+}
